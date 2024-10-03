@@ -1,71 +1,117 @@
-h1{
-    font-size: 24px;
-color: #1480ec;
-font-weight: bold;
-font-style: italic;
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    padding: 20px;
 }
 
 
-h2{
-    font-size: 20px;
-    color: #0000ff;
-font-weight:bold;
-}
-
-
-
-h3{
-    font-size: 16px;
-    color: teal;
-
-}
-
-
-
-p{
-    font-size: 16px;
-    color: #4D4D4D  ;
-font-weight: bold;
-
-}
-
-
-
-a{
-color: #8A2BE2;
-text-decoration:none ;
-}
-
-
-/* Header styles */
 header {
-  width: 100vw; /* full screen width */
-  height: 33.33vh; /* at least 1/3 of the screen height */
-  background-image: url('header-background.jpg'); /* choose a background image that fits the theme */
-  background-size: cover; /* cover the full width and height */
-  background-position: center; /* center the image */
-  background-repeat: no-repeat; /* don't repeat the image */
+    width: 100vw; 
+    height: 100vh; 
+    background-image: url('lucht.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
 }
 
-header h1, header p {
-  color: #fff; /* change the text color to white for better readability */
+
+header h1 {
+    color: #ffcc00; 
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-style: italic;
 }
 
-/* Image styles */
+header p {
+    color: #ffcc00; 
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+
+h1 {
+    font-size: 24px; 
+    color: blue; 
+    font-weight: bold; 
+    font-style: italic; 
+}
+
+h2 {
+    font-size: 20px; 
+    color: #0000ff; 
+    font-weight: bold; 
+}
+
+h3 {
+    font-size: 16px; 
+    color: teal; 
+    font-weight: bold; 
+}
+
+p {
+    color: #4D4D4D; 
+}
+
+
+article p:first-of-type {
+    font-weight: bold;
+}
+
+
+a {
+    color: #8A2BE2; 
+    text-decoration: none; 
+}
+
+
 img {
-  width: 50vw; /* half of the screen width */
-  height: auto; /* maintain aspect ratio */
+    width: 50vw; 
+    height: auto; 
+    display: block;
+    margin: 0 auto 20px; 
 }
 
-/* Article styles */
+
 article {
-  border: 2px solid #ccc; /* add a border with a rounded corner */
-  border-radius: 10px; /* rounded corner */
-  border-left-width: 5px; /* thicker border on the left side */
-  border-left-style: solid;
-  border-left-color: #666; /* choose a color for the left border */
+    border-radius: 20px; 
+    border: 3px solid #333;
+    border-left-width: 6px; 
+    margin-bottom: 20px; 
+    padding: 20px;
 }
-body{
-background-image: ;
 
+
+article:nth-child(1) {
+    border-color: #f6511e; 
 }
+
+article:nth-child(2) {
+    border-color: #33c1ff; 
+}
+
+article:nth-child(3) {
+    border-color: #f609ab;
+}
+
+article:nth-child(4) {
+    border-color: #24ff07; 
+}
+
+article:nth-child(5) {
+    border-color: #fe0f03; 
+}
+
+
+
+
+
